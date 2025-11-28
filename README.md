@@ -7,3 +7,4 @@
 - create the app as monorepo distinguishing between frontend and API backend
 - dockerize the app with Docker and Docker Compose
 - create Docker services for production and local development
+- use Next.js App Router
