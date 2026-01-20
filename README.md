@@ -91,6 +91,10 @@ Even though this simple application doesn't strictly need an intermediary layer,
 
 ## 🛠️ Technology Stack
 
+<div align="center">
+<img src=".github/readme-assets/tech-stack.png" alt="Technology Stack" width="700"/>
+</div>
+
 ### Frontend Layer
 
 | Technology | Version | Purpose |
