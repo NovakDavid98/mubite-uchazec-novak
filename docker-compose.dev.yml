@@ -1,0 +1,37 @@
+services:
+  api:
+    build:
+      context: ./packages/api
+      dockerfile: Dockerfile
+      target: base
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=development
+      - PORT=4000
+    volumes:
+      - ./packages/api/src:/app/src:ro
+      - ./packages/api/package.json:/app/package.json:ro
+    command: sh -c "npm install && npm run dev"
+
+  frontend:
+    build:
+      context: ./packages/frontend
+      dockerfile: Dockerfile
+      target: base
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - API_URL=http://api:4000
+      - WATCHPACK_POLLING=true
+    volumes:
+      - ./packages/frontend/app:/app/app:ro
+      - ./packages/frontend/public:/app/public:ro
+      - ./packages/frontend/package.json:/app/package.json:ro
+      - ./packages/frontend/next.config.ts:/app/next.config.ts:ro
+      - ./packages/frontend/tsconfig.json:/app/tsconfig.json:ro
+      - ./packages/frontend/postcss.config.mjs:/app/postcss.config.mjs:ro
+    command: sh -c "npm install && npm run dev"
+    depends_on:
+      - api
