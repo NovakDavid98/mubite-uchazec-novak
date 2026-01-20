@@ -26,3 +26,4 @@ yarn-error.log*
 # Package manager
 *.tsbuildinfo
 package-lock.json
+.venv/
