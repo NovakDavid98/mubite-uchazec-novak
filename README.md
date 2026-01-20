@@ -13,9 +13,9 @@
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-<img src=".github/readme-assets/architecture-flow.gif" alt="Architecture Flow" width="800"/>
+<img src=".github/readme-assets/app-screenshot.png" alt="Album Collection App Screenshot" width="900"/>
 
-*Professional microservices architecture demonstrating the Bridge Pattern*
+*Modern dark-themed interface displaying 100 albums with beautiful gradient design*
 
 [View Demo](#-quick-start) · [Report Bug](https://github.com/NovakDavid98/mubite-uchazec-novak/issues) · [Documentation](#-documentation)
 
@@ -40,10 +40,6 @@
 ---
 
 ## ✨ Features
-
-<div align="center">
-<img src=".github/readme-assets/features.png" alt="Features Showcase" width="800"/>
-</div>
 
 ### 🎯 Core Capabilities
 
@@ -94,10 +90,6 @@ Even though this simple application doesn't strictly need an intermediary layer,
 ---
 
 ## 🛠️ Technology Stack
-
-<div align="center">
-<img src=".github/readme-assets/tech-stack.png" alt="Technology Stack" width="700"/>
-</div>
 
 ### Frontend Layer
 
@@ -432,18 +424,6 @@ Tablet:    2 columns (640px - 1024px)
 Desktop:   3 columns (1024px - 1280px)
 Large:     4 columns (≥ 1280px)
 ```
-
----
-
-## 🤝 Contributing
-
-This project was created for the MUBITE Testing Challenge. If you have suggestions:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -am 'Add improvement'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
 
 ---
 
